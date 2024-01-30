@@ -1,0 +1,17 @@
+package variables;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int sayılar =topla(2,5,5,6,9);
+		System.out.println(sayılar);
+	}
+        
+	public static int topla (int... sayılar) {
+		int toplam = 0;
+		for (int sayı : sayılar) {
+			toplam += sayı;
+		}
+		return toplam;
+	}
+}

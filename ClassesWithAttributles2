@@ -1,0 +1,9 @@
+package classesWithAttributles;
+
+public class Product {
+	int id; //
+	int stockAmount; //
+	String name; // Attribute veya field
+	String description; //
+	double price; //
+}

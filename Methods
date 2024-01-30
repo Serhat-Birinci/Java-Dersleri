@@ -1,0 +1,30 @@
+package methods;
+
+public class Main {
+
+	public static void main(String[] args) {
+		sayıBulmaca();
+	}
+
+	public static void sayıBulmaca() {
+		int[] number = new int[] { 1, 2, 5, 7, 9, 0 };
+
+		int aranan = 5;
+		boolean varMı = false;
+		for (int sayı : number) {
+			if (sayı == aranan) {
+				varMı = true;
+			}
+		}
+
+		if (varMı) {
+			mesajVer("sayı mevcut: " +aranan);
+		} else {
+			mesajVer("sayı mevcut değidir: " +aranan);
+
+		}
+	}
+	public static void mesajVer(String mesaj) {
+		System.out.println(mesaj);
+	}
+}
